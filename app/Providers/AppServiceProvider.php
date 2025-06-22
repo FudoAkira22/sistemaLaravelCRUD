@@ -4,6 +4,7 @@ namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
 
+use Illuminate\Pagination\Paginator;//Es para la paginacion
 class AppServiceProvider extends ServiceProvider
 {
     /**
@@ -19,6 +20,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        //
+        //Es para la paginacion 
+        Paginator::useBootstrap();
     }
 }
